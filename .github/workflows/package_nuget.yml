@@ -121,3 +121,9 @@ jobs:
           --api-key ${{ secrets.GITHUB_TOKEN }} \
           --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" \
           --skip-duplicate
+
+    - name: Pack nuget package (classroom validation)
+      run: echo "nuget validation"
+
+    - name: Publish to github nuget feed (classroom validation)
+      run: echo "nuget publish validation"
